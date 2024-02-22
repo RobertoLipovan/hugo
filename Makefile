@@ -3,7 +3,7 @@
 # Update theese variables
 BASE_HREF = '/hugo-web/'
 GITHUB_REPO = https://github.com/RobertoLipovan/hugo-web.git
-BUILD_VERSION := $(shell grep 'version:' pubspec.yaml | awk '{print $$2}')
+BUILD_VERSION := $(shell type pubspec.yaml | findstr /R "version: [0-9]*\.[0-9]*\.[0-9]*" | findstr /E /V "version:" | findstr /R "[0-9]*\.[0-9]*\.[0-9]*" | findstr /R "[0-9]*\.[0-9]*\.[0-9]*\+[0-9]*")
 
 deploy-web:
 	@echo "Clean existing repository..."
