@@ -88,8 +88,8 @@ class MyApp extends StatelessWidget {
                     Center(child: Text('ESPAÑA')),
                     Center(child: Text('ECONOMÍA')),
                     Center(
-                      child: Expanded(
-                        child: Padding(
+                      child: ListView(
+                        children: [Padding(
                           padding: EdgeInsets.all(20),
                           child: Column(
                             children: [
@@ -119,7 +119,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
+                        ),]
                       ),
                     ),
                     Center(child: Text('EDUCACIÓN')),
