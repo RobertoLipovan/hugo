@@ -101,7 +101,7 @@ class MyApp extends StatelessWidget {
                               
                                 Image.asset(
                                   'assets/foto_noticia.png',
-                                  // fit: BoxFit.fill
+                                  fit: BoxFit.fill
                                 ),
                               
                               Padding(padding: EdgeInsets.all(8.0)),
