@@ -88,15 +88,31 @@ class MyApp extends StatelessWidget {
                     Center(child: Text('ESPAÑA')),
                     Center(child: Text('ECONOMÍA')),
                     Center(
-
-                      child: Column(
-                        children: [
-                          Text(
-                            "1 MAR 2024 | Actualizado 12:34 CET",
+                      child: Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.all(20),
+                          child: Column(
+                            children: [
+                              Text("1 MAR 2024 | Actualizado 12:34 CET"),
+                              Padding(padding: EdgeInsets.all(8.0)),
+                              Expanded(
+                                child: Image.asset(
+                                  'assets/foto_noticia.png',
+                                  alignment: Alignment.center,
+                                  fit: BoxFit.contain, // Ajusta la imagen al ancho
+                                ),
+                              ),
+                              Padding(padding: EdgeInsets.all(8.0)),
+                              Text(
+                                "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                style: TextStyle(
+                                  fontSize: 24.0,
+                                ),
+                              ),
+                            ],
                           ),
-                          Image.asset('assets/foto_noticia.png'),
-                        ],
-                      )
+                        ),
+                      ),
                     ),
                     Center(child: Text('EDUCACIÓN')),
                     Center(child: Text('MEDIO AMBIENTE')),
