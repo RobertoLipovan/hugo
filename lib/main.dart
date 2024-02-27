@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
                       child: Expanded(
                         child: Padding(
                           padding: EdgeInsets.all(20),
-                          child: ListView(
+                          child: Column(
                             children: [
                               Text(
                                 textAlign: TextAlign.center,
