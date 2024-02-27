@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 6, // Número de pestañas
+        initialIndex: 3,
         child: Scaffold(
           appBar: AppBar(
             leading: IconButton(
@@ -48,24 +49,55 @@ class MyApp extends StatelessWidget {
           body: Column(
             children: [
               // Barra de pestañas personalizada
-              TabBar(
-                tabs: [
-                  Tab(text: 'OPINIÓN'),
-                  Tab(text: 'ESPAÑA'),
-                  Tab(text: 'ECONOMÍA'),
-                  Tab(text: 'SOCIEDAD'),
-                  Tab(text: 'EDUCACIÓN'),
-                  Tab(text: 'MEDIO AMBIENTE'),
-                ],
+              Container(
+                height: 30.0,
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: Colors.grey, width: 1.0), // Adjust the thickness here
+                  ),
+                ),
+                child: TabBar(
+                  padding: EdgeInsets.all(0),
+                  tabAlignment: TabAlignment.start,
+                  indicatorColor: Colors.black,
+                  labelStyle: TextStyle(
+                    color: Colors.black, // Color del texto de la pestaña seleccionada
+                    fontWeight: FontWeight.bold, // Negrita
+                  ),
+                  unselectedLabelStyle: TextStyle(
+                    color: Colors.grey, // Color del texto de las pestañas no seleccionadas
+                    fontWeight: FontWeight.w300, // Light
+                  ),
+                  tabs: [
+                    Tab(text: 'OPINIÓN'),
+                    Tab(text: 'ESPAÑA'),
+                    Tab(text: 'ECONOMÍA'),
+                    Tab(text: 'SOCIEDAD'),
+                    Tab(text: 'EDUCACIÓN'),
+                    Tab(text: 'MEDIO AMBIENTE'),
+                  ],
+                  isScrollable: true,
+                ),
+                
               ),
-              // Contenido de las pestañas
+              //  Contenido de las pestañas
               Expanded(
                 child: TabBarView(
                   children: [
                     Center(child: Text('OPINIÓN')),
                     Center(child: Text('ESPAÑA')),
                     Center(child: Text('ECONOMÍA')),
-                    Center(child: Text('SOCIEDAD')),
+                    Center(
+
+                      child: Column(
+                        children: [
+                          Text(
+                            "1 MAR 2024 | Actualizado 12:34 CET",
+                          ),
+                          Image.asset('assets/foto_noticia.png'),
+                        ],
+                      )
+                    ),
                     Center(child: Text('EDUCACIÓN')),
                     Center(child: Text('MEDIO AMBIENTE')),
                   ],
