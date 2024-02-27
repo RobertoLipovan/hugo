@@ -66,6 +66,9 @@ flutter:
     - assets/el-pais-logo 1.png
     - assets/logo.png
     - assets/foto_noticia.png
+  
+  fonts: 
+    - family: Times New Roman
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
