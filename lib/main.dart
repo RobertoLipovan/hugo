@@ -315,7 +315,7 @@ class MyApp extends StatelessWidget {
                                   textAlign: TextAlign.start,
                                   "El misterio tras el telón: Sabotage en Mamma Mía!",
                                   style: TextStyle(
-                                    fontSize: 40.0,
+                                    fontSize: 32.0,
                                     fontFamily: 'Times New Normal Regular',
                                     fontWeight: FontWeight.w800,
                                   ),
