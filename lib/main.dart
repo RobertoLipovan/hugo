@@ -84,9 +84,6 @@ class MyApp extends StatelessWidget {
               Expanded(
                 child: TabBarView(
                   children: [
-                    Center(child: Text('OPINIÓN')),
-                    Center(child: Text('ESPAÑA')),
-                    Center(child: Text('ECONOMÍA')),
                     Center(
                       child: ListView(
                         children: [
@@ -99,12 +96,10 @@ class MyApp extends StatelessWidget {
                                   "1 MAR 2024 | Actualizado 12:34 CET"
                                 ),
                                 Padding(padding: EdgeInsets.all(8.0)),
-                                
-                                  Image.asset(
-                                    'assets/foto_noticia.png',
-                                    fit: BoxFit.fill
-                                  ),
-                                
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
                                 Padding(padding: EdgeInsets.all(8.0)),
                                 Text(
                                   textAlign: TextAlign.start,
@@ -131,8 +126,216 @@ class MyApp extends StatelessWidget {
                         ]
                       ),
                     ),
-                    Center(child: Text('EDUCACIÓN')),
-                    Center(child: Text('MEDIO AMBIENTE')),
+                    Center(
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              children: [
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "1 MAR 2024 | Actualizado 12:34 CET"
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Text(
+                                  textAlign: TextAlign.start,
+                                  "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.all(4.0)),
+                                Text(
+                                  textAlign: TextAlign.justify,
+                                  "El viernes pasado, la esperada presentación de Mamma Mia! en el Teatro Rialto, Madrid, se vio empañada por un misterioso sabotaje que amenazaba con opacar la función. Hugo, conocido como el detective especializado en obras artísticas y musicales, fue convocado para resolver el enigma que oscurecía el escenario. Entre luces intermitentes y sonidos desafinados, el equipo técnico y los actores se enfrentaron a una situación caótica minutos antes del estreno.\n\nPara recabar la máxima información posible se les interrogó a varios de los testigos que estuvieron presentes. Según Carmela, bailarina principal, tras la explosión de humo, se encontró un maletín en el centro del escenario que contenía una caja. El equipo técnico, al abrir la caja, encontró una nota intrigante entre partituras revueltas y cables cortados. El enigmático mensaje rezaba: La llave que buscas para abrir la caja, la tiene una persona de este lugar, pero ves con cuidado, no todos son como parecen, por muy sencillo que parezca, puede que tengas que buscar por donde menos te lo esperas para que te otorgue la llave que tanto deseas.\n\nA pesar de los esfuerzos de la policía, la llave aún no ha sido encontrada. Sin embargo, Hugo continúa su búsqueda, entrevistando a los actores para desentrañar el código oculto en la nota y descubrir quién posee la llave y qué secreto guarda la misteriosa caja. La intriga persiste en el Teatro Rialto, y los amantes del arte y la música aguardan ansiosos el desenlace de este enigma en el vibrante mundo de Mamma Mia!",
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w100,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
+                    Center(
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              children: [
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "1 MAR 2024 | Actualizado 12:34 CET"
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Text(
+                                  textAlign: TextAlign.start,
+                                  "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.all(4.0)),
+                                Text(
+                                  textAlign: TextAlign.justify,
+                                  "El viernes pasado, la esperada presentación de Mamma Mia! en el Teatro Rialto, Madrid, se vio empañada por un misterioso sabotaje que amenazaba con opacar la función. Hugo, conocido como el detective especializado en obras artísticas y musicales, fue convocado para resolver el enigma que oscurecía el escenario. Entre luces intermitentes y sonidos desafinados, el equipo técnico y los actores se enfrentaron a una situación caótica minutos antes del estreno.\n\nPara recabar la máxima información posible se les interrogó a varios de los testigos que estuvieron presentes. Según Carmela, bailarina principal, tras la explosión de humo, se encontró un maletín en el centro del escenario que contenía una caja. El equipo técnico, al abrir la caja, encontró una nota intrigante entre partituras revueltas y cables cortados. El enigmático mensaje rezaba: La llave que buscas para abrir la caja, la tiene una persona de este lugar, pero ves con cuidado, no todos son como parecen, por muy sencillo que parezca, puede que tengas que buscar por donde menos te lo esperas para que te otorgue la llave que tanto deseas.\n\nA pesar de los esfuerzos de la policía, la llave aún no ha sido encontrada. Sin embargo, Hugo continúa su búsqueda, entrevistando a los actores para desentrañar el código oculto en la nota y descubrir quién posee la llave y qué secreto guarda la misteriosa caja. La intriga persiste en el Teatro Rialto, y los amantes del arte y la música aguardan ansiosos el desenlace de este enigma en el vibrante mundo de Mamma Mia!",
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w100,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
+                    Center(
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              children: [
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "1 MAR 2024 | Actualizado 12:34 CET"
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Text(
+                                  textAlign: TextAlign.start,
+                                  "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.all(4.0)),
+                                Text(
+                                  textAlign: TextAlign.justify,
+                                  "El viernes pasado, la esperada presentación de Mamma Mia! en el Teatro Rialto, Madrid, se vio empañada por un misterioso sabotaje que amenazaba con opacar la función. Hugo, conocido como el detective especializado en obras artísticas y musicales, fue convocado para resolver el enigma que oscurecía el escenario. Entre luces intermitentes y sonidos desafinados, el equipo técnico y los actores se enfrentaron a una situación caótica minutos antes del estreno.\n\nPara recabar la máxima información posible se les interrogó a varios de los testigos que estuvieron presentes. Según Carmela, bailarina principal, tras la explosión de humo, se encontró un maletín en el centro del escenario que contenía una caja. El equipo técnico, al abrir la caja, encontró una nota intrigante entre partituras revueltas y cables cortados. El enigmático mensaje rezaba: La llave que buscas para abrir la caja, la tiene una persona de este lugar, pero ves con cuidado, no todos son como parecen, por muy sencillo que parezca, puede que tengas que buscar por donde menos te lo esperas para que te otorgue la llave que tanto deseas.\n\nA pesar de los esfuerzos de la policía, la llave aún no ha sido encontrada. Sin embargo, Hugo continúa su búsqueda, entrevistando a los actores para desentrañar el código oculto en la nota y descubrir quién posee la llave y qué secreto guarda la misteriosa caja. La intriga persiste en el Teatro Rialto, y los amantes del arte y la música aguardan ansiosos el desenlace de este enigma en el vibrante mundo de Mamma Mia!",
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w100,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
+                    Center(
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              children: [
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "1 MAR 2024 | Actualizado 12:34 CET"
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Text(
+                                  textAlign: TextAlign.start,
+                                  "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.all(4.0)),
+                                Text(
+                                  textAlign: TextAlign.justify,
+                                  "El viernes pasado, la esperada presentación de Mamma Mia! en el Teatro Rialto, Madrid, se vio empañada por un misterioso sabotaje que amenazaba con opacar la función. Hugo, conocido como el detective especializado en obras artísticas y musicales, fue convocado para resolver el enigma que oscurecía el escenario. Entre luces intermitentes y sonidos desafinados, el equipo técnico y los actores se enfrentaron a una situación caótica minutos antes del estreno.\n\nPara recabar la máxima información posible se les interrogó a varios de los testigos que estuvieron presentes. Según Carmela, bailarina principal, tras la explosión de humo, se encontró un maletín en el centro del escenario que contenía una caja. El equipo técnico, al abrir la caja, encontró una nota intrigante entre partituras revueltas y cables cortados. El enigmático mensaje rezaba: La llave que buscas para abrir la caja, la tiene una persona de este lugar, pero ves con cuidado, no todos son como parecen, por muy sencillo que parezca, puede que tengas que buscar por donde menos te lo esperas para que te otorgue la llave que tanto deseas.\n\nA pesar de los esfuerzos de la policía, la llave aún no ha sido encontrada. Sin embargo, Hugo continúa su búsqueda, entrevistando a los actores para desentrañar el código oculto en la nota y descubrir quién posee la llave y qué secreto guarda la misteriosa caja. La intriga persiste en el Teatro Rialto, y los amantes del arte y la música aguardan ansiosos el desenlace de este enigma en el vibrante mundo de Mamma Mia!",
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w100,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
+                    Center(
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              children: [
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "1 MAR 2024 | Actualizado 12:34 CET"
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Image.asset(
+                                  'assets/foto_noticia.png',
+                                  fit: BoxFit.fill
+                                ),
+                                Padding(padding: EdgeInsets.all(8.0)),
+                                Text(
+                                  textAlign: TextAlign.start,
+                                  "El misterio tras el telón: Sabotage en Mamma Mía!",
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.all(4.0)),
+                                Text(
+                                  textAlign: TextAlign.justify,
+                                  "El viernes pasado, la esperada presentación de Mamma Mia! en el Teatro Rialto, Madrid, se vio empañada por un misterioso sabotaje que amenazaba con opacar la función. Hugo, conocido como el detective especializado en obras artísticas y musicales, fue convocado para resolver el enigma que oscurecía el escenario. Entre luces intermitentes y sonidos desafinados, el equipo técnico y los actores se enfrentaron a una situación caótica minutos antes del estreno.\n\nPara recabar la máxima información posible se les interrogó a varios de los testigos que estuvieron presentes. Según Carmela, bailarina principal, tras la explosión de humo, se encontró un maletín en el centro del escenario que contenía una caja. El equipo técnico, al abrir la caja, encontró una nota intrigante entre partituras revueltas y cables cortados. El enigmático mensaje rezaba: La llave que buscas para abrir la caja, la tiene una persona de este lugar, pero ves con cuidado, no todos son como parecen, por muy sencillo que parezca, puede que tengas que buscar por donde menos te lo esperas para que te otorgue la llave que tanto deseas.\n\nA pesar de los esfuerzos de la policía, la llave aún no ha sido encontrada. Sin embargo, Hugo continúa su búsqueda, entrevistando a los actores para desentrañar el código oculto en la nota y descubrir quién posee la llave y qué secreto guarda la misteriosa caja. La intriga persiste en el Teatro Rialto, y los amantes del arte y la música aguardan ansiosos el desenlace de este enigma en el vibrante mundo de Mamma Mia!",
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontFamily: 'Times New Normal Regular',
+                                    fontWeight: FontWeight.w100,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
                   ],
                 ),
               ),
